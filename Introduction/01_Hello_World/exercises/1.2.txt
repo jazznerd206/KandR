@@ -1,0 +1,10 @@
+Exercise 1-2: Experiment to find out what happens when the print statement string argument contains "\c", where c is some
+character not listed above.
+
+helloworld.c: In function ‘main’:
+helloworld.c:15:9: warning: unknown escape sequence: '\c'
+  printf("\c");
+
+
+This is the resulting error. "\c" is not recognized as a valid escape character, so the program will not compile.
+

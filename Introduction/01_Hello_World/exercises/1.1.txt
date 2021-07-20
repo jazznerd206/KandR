@@ -1,0 +1,26 @@
+Exercise 1-1: Compile and run the hello world program and experiment with the code. What error messages can you get?
+
+When the code compiles correctly, I get 2 lines, each reading hello word. the first HW is return with one line of code and 
+the second is that same line broken up into the three individual pieces, each word and the newline character getting their 
+own print statements.
+
+WARNING #1: came with every compilation, did not affect final output
+helloworld.c:4:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main()
+ ^~~~
+
+ERROR #1:
+helloworld.c: In function ‘main’:
+helloworld.c:15:2: error: expected declaration or statement at end of input
+  printf("\n");
+  ^~~~~~
+-> This error resulted from missing a curly brace
+
+ERROR #2:
+helloworld.c: In function ‘main’:
+helloworld.c:12:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("hello world\n");
+  ^~~~~~
+helloworld.c:12:2: warning: incompatible implicit declaration of built-in function ‘printf’
+helloworld.c:12:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+-> This error resulted from failing to include the standard library
