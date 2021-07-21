@@ -1,0 +1,4 @@
+Exercise 1-10: Write a program to read its input to output, replacing tabs with \t, backspaces with \b and backslashes with 
+\\. This makes tabs and backspaces visible in an unambiguous way.
+
+SEE lineCountModThree.c IN CODE DIRECTORY

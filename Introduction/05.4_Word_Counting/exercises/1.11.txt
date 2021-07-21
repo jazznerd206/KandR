@@ -1,0 +1,7 @@
+Exercise 1-11: How would you test the word counting program? What kinds of input are most likely to uncover bugs if there are any?
+
+Testing this program involves validating the input. First pass a standard string, then I would pass all escape sequences. 
+Then all spaces and maybe special characters.
+
+This program hinges on the condition (c = getchar() != EOF), so if in any case of a file not having an EOF marker, this 
+function will never close.
