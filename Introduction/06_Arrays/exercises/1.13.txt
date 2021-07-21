@@ -1,0 +1,4 @@
+Exercise 1-13: Write a program that returns a histogram (bar graph) of the lengths of words in the input.
+Try horizontal first, vertical next
+
+SEE histogram.c IN CODE DIRECTORY

@@ -1,0 +1,3 @@
+Exercise 1-14: Write a program that produces a histogram of the frenquencies of characters in its input
+
+SEE frequencies.c IN CODE DIRECTORY

@@ -2,7 +2,7 @@
 
 //
 
-main()
+void main()
 {
 
 }
