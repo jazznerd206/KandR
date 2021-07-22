@@ -1,0 +1,10 @@
+In C, all function arguments are passed by value, not by reference. This means that the values accepted as parameters by a 
+function are actually temporary variables with corresponding data, not the original data object. DIFFERENT THAN JS.
+
+Using call by value can often lead to more compat programs with fewer extraneous variables because parameters can be reated 
+as conveniently intialized local variable to the routine.
+
+When necessary, it is possible to modify the original value inside of a called routine. The parameter must be packaged with 
+its original location, a pointer. CHAPTER 5
+
+Arrays are the special case, as the original values of arrays get passed into the parameters. No copying of elements.
