@@ -1,0 +1,4 @@
+Exercise 1-16: Revise the main program so it will correctly print the length of arbitrary long input lines and as much as 
+possible of the text.
+
+SEE longLinePrint.c IN CODE DIRECTORY
