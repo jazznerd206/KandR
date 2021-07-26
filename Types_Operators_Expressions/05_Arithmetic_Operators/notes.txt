@@ -1,0 +1,7 @@
+OPERATORS -> +, -, *, /, %
+
++ -> addition
+- -> subtraction
+* -> multiplication
+/ -> division
+% -> modulo/remainder

@@ -1,0 +1,42 @@
+INTEGER -> 123 / 1 / 1230894
+	- can be specified in OCTAL or HEXIDECIMAL instead of decimal
+	- a leading zero on an integer constant defines it as an octal
+	- a leading 0X means hexidecimal
+	- 31 (decimal) = 037 (octal) = 0x1f (hexidecimal)
+	- both OCTAL and HEXIDECIMAL can be appended with typings, 0xFUL is an unsigned long constant with the value 15 decimal
+LONG -> 2341322L (must end in L)
+FLOAT -> 12.3 / 1.234 (contains a decimal) or an exponent (le-2) or both
+	THE TYPE OF A FLOAT IS A DOUBLE UNLESS THE WIZARD SAYS OTHERWISE
+CHARACTER -> integer, written as a char with single quotes, 'x'
+	- the value of a character constant is the numeric value of the character in the machines character set
+	- common library is ASCII, you know this MAAANNNN
+	- certain characters can be substituted for common escape sequences
+/*
+#define VTAB '\013' ascii vertical tab
+#define VELL '\007' ascii bell character
+*/
+
+STRING -> also known as a string literal, is a sequence of zero or more characters in a row delimited by double quotes
+	-techincally, a string is just a array of char with a '\0' denoting the end of it in storage.
+
+ENUM -> list of constant integer values
+	- the first name in an enum has value 0, second has value 1.. etc unless explicit values are specified
+/*
+enum months ( JAN = 1, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEPT, OCT, NOV, DEC };
+*/
+
+
+ALL ESCAPE SEQUENCES
+\a -> alert/bell
+\b ->  backspace
+\f -> formfeed
+\n -> newline
+\r - carriage return (silly windows, right)
+\t -> horizontal tab
+\v -> vertical tab
+\\ - backlash
+\? -> question mark
+\' -> single quote
+\" ->  double quote
+\ooo -> octal number
+\xhh -> hex number

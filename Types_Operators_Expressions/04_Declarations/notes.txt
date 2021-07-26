@@ -1,0 +1,6 @@
+All variables must be declared before use, although certain declarations can be made inferred by content. A declaration specifies a type, and variable names.
+Putting all your variables on one line looks cool and saves space, but declaring them individually gives the developer more control over the commenting on each parameter.
+
+After a variable is declared, it must be initialized. This can happen at the beginning of the file or at the beignning of a loop, but it must happen.
+
+The qualifier const can be apploed to the declaration of any variable that has an unchanging value, cannot be altered in any way.

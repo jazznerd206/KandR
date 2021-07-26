@@ -1,0 +1,10 @@
+Exercise 1-2: Write a loop exquivalent to ->
+
+for (i = 0; i < lim -1 && (c = getchar()) != '\n' && c != EOF; ++i) {
+	s[i] = c;
+}
+
+without using && or ||
+
+
+SEE noAndOr.c IN CODE DIRECTORY

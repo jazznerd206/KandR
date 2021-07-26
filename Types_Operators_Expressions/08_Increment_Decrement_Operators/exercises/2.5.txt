@@ -1,0 +1,4 @@
+Exercise 2-5: Write the function any(s1, s2) which returns the first location in string s1 where any character from the string s2 ccurs, or -1 if sq contains no 
+characters from s2.
+
+SEE any.c IN CODE DIRECTORY

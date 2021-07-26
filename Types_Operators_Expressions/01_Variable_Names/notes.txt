@@ -1,0 +1,16 @@
+Variables and constants are the manipulables in a given program. The #define statements dictate what the variables of a 
+program are, and the operators are the functions declared directly after them.
+
+Expressions combine variables and operators to produce new values, i.e. operators in actual usage.
+
+
+Variable names:
+-> made up of letters and digits
+-> at least the first 31 characters of an internal name are insignificant
+-> only 6 characters are guaranteed to unique properties for external variables
+
+It is wise to choose names that are related to the purpose of the variable and that are nulikely to get lexographically confused.
+
+Short names -> local variables
+Long names -> external variables
+Capitalize -> constants
