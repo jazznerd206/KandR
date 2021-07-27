@@ -8,11 +8,12 @@
 #define BIN_LEN 8
 
 void tobinary(int b[], int n);
-void setbits( int a[],int b[], int c, int d);
+void setbits(int a[],int b[], int c, int d);
+int getbits(int a, int b, int c);
 
 void main()
 {
-	int m, n, i;
+	int m, n, i, temp;
 	int binone[BIN_LEN];
 	int bintwo[BIN_LEN];
 	for (i = 0; i < BIN_LEN; ++i) {
@@ -20,11 +21,12 @@ void main()
 	}
 	printf("Enter number one -> ");
 	scanf("%d",&m);
-	printf("Enter number two -> ");
-	scanf("%d",&n);
-	tobinary(binone, m);
-	tobinary(bintwo, n);
-	setbits(binone, bintwo, 1,  2);
+//	printf("Enter number two -> ");
+//	scanf("%d",&n);
+//	tobinary(binone, m);
+//	tobinary(bintwo, n);
+	temp = getbits(m, 6, 2);
+	printf("from get bits -> %d\n", temp);
 }
 
 void tobinary(int binary[], int n)
@@ -37,11 +39,6 @@ void tobinary(int binary[], int n)
 		n = n / 2;
 		++i;
 	}
-//	printf("to binary ->");
-//	for (j = BIN_LEN - 1; j >= 0; --j) {
-//		printf("%d", binary[j]);
-//	}
-//	printf("\n");
 }
 
 void setbits(int a[], int b[], int c, int d)
@@ -52,9 +49,14 @@ void setbits(int a[], int b[], int c, int d)
 	for (n = BIN_LEN - 1; n >= 0; --n) {
 		printf("%d", a[n]);
 	}
-	printf("\nbintwo -> ");
-	for (m = BIN_LEN - 1; m >= 0; --m) {
-		printf("%d", b[m]);
-	}
+//	printf("\nbintwo -> ");
+//	for (m = BIN_LEN - 1; m >= 0; --m) {
+//		printf("%d", b[m]);
+//	}
 	printf("\n");
+}
+
+int getbits(int a, int p, int x)
+{
+	return ( a & (~(~0<<x) << (p+1-x)));
 }

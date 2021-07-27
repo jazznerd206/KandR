@@ -1,0 +1,87 @@
+// function to convert decimal to binary
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+#define MAX 32
+
+void tobinary(int n);
+int get(int s[], int l);
+int power (int m, int t);
+
+void main()
+{
+	int len, c, temp, i, n;
+	int buffer[MAX];
+	printf("Enter the number to convert: ");
+	scanf("%d",&n);
+//	while ((len = get(buffer, MAX)) > 0) {
+//		temp = 0;
+//		while ((len - 2) >= 0) {
+//			temp += (buffer[len - 2] - 48) * i;
+//			i = i * 10;
+//			len--;
+//		}
+//		tobinary(temp);
+//		i = 1;
+	}
+}
+
+int get(int s[],int lim)
+{
+    	int c, i;
+
+    	for (i = 0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i) {
+        	s[i] = c;
+	}
+   	if (c == '\n') {
+       		s[i] = c;
+       		++i;
+   	}
+    	s[i] = '\0';
+
+    	return i;
+}
+
+void tobinary(int n)
+{
+	int i, j, x, comp, y;
+	i = 0;
+	j = 8;
+	comp = n;
+	int binary[j];
+	for (x = 0; x < j; ++x) {
+		binary[x] = 0;
+	}
+	int bits[] = { 128, 64, 32, 16, 8, 4, 2, 1 };
+
+	while (comp >= 0) {
+		if ((bits[i] - n) > 0) {
+			binary[i] = 0;
+			++i;
+		} else {
+			binary[i] = 1;
+			comp = comp - bits[i];
+			++i;
+		}
+	}
+	for (y = 0; y < j; ++y) {
+		printf("%d", binary[y]);
+	}
+	printf("\n");
+}
+
+int power (int base, int n)
+{
+	int i, p;
+
+	p = 1;
+	for (i = 1; i <= n; ++i)
+	{
+		p = p * base;
+	}
+	return p;
+}
+
+// 1 2 4 8 16 32 64 128
