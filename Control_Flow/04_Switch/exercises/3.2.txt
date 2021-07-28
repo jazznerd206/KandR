@@ -1,0 +1,3 @@
+Exercise 3-2: Write a function escape(s,t) that converts newlines and tabs into visually appealing character sequences.
+
+SEE gobig.c
