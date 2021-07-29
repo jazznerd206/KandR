@@ -1,0 +1,3 @@
+Exercise 3-4: Modify atoi to handle the largest negative number, -(2 ^ wordsize-1). Explain why not and modify the code.
+
+SEE atoimod.c

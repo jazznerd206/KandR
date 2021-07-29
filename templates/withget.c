@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
 #define MAX 1000
 
 int get(char line[], int maxline);
